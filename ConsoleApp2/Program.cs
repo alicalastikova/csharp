@@ -35,6 +35,8 @@
                     default:
                         Console.WriteLine("Nespravna akcia.");
                         break;
+
+                   
                 }
             }
         }
@@ -77,7 +79,7 @@
             Console.Clear();
             Console.WriteLine("1.Vypis poloziek.");
             Console.WriteLine("2.Pridanie polozky.");
-            Console.WriteLine("4.Exit");
+            Console.WriteLine("3.Exit");
             Console.Write("Vyberte akciu: ");
 
 

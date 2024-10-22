@@ -23,7 +23,7 @@ namespace MyApp
             list.Add(ToyotaSupraTurbo);
             foreach (Vehicle v in list)
             {
-                Console.WriteLine(Vehicle.VypisAuta(false));
+                //Console.WriteLine(Vehicle.VypisAuta(false));
             }
 
 

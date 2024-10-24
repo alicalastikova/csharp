@@ -4,14 +4,20 @@
     {
         static void Main(string[] args)
         {
-           Mesto Mesto = new Mesto();
-            Mesto.meno = "jana";
-            Mesto.vek = 24;
-            Mesto.meno2 = "olga";
-            Mesto.vek2 = 1999;
-            Console.WriteLine("Obcania mesta Bratislava:");
-            Console.WriteLine("meno:" + Mesto.meno, "  vek:"+ Mesto.vek);
-            Console.WriteLine("meno:" + Mesto.meno2, "  vek:" + Mesto.vek2);
+           Mesto mesto = new Mesto("Bratislava");
+           Mesto mesto1 = new Mesto("Zilina");
+
+            
+            mesto.PridajObcana(new Obcan("olga", 20));
+            mesto.PridajObcana(new Obcan("ivan", 30));
+            mesto.PridajObcana(new Obcan("fero", 70));
+
+            mesto1.PridajObcana(new Obcan("oliver", 24));
+            mesto1.PridajObcana(new Obcan("stefan", 26));
+            mesto1.PridajObcana(new Obcan("pista", 47));
+
+            mesto.VypisObcanov();
+            mesto1.VypisObcanov();
 
 
         }

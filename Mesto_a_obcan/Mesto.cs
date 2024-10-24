@@ -8,23 +8,27 @@ namespace Mesto_a_obcan
 {
     public class Mesto
     {
-        public string meno { get; set; }
-        public int vek { get; set; }
-        public string meno2 { get; set; }
-        public int vek2 { get; set; }
+        public string nazov;
+        public List<Obcan>Obcania;
 
-        public Mesto(string meno, int Vek)
-        {
-            vek = Vek;
-            this.meno = meno;
-        }
-        public Mesto(string meno, int Vek)
-        {
-            vek2 = Vek;
-            this.meno2 = meno;
+        public Mesto(string Bratislava) 
+        { 
+         this.nazov = Bratislava;
+            Obcania = new List<Obcan>();
         }
 
+        public void PridajObcana (Obcan obcan) 
+        { 
+         Obcania.Add(obcan);
+        }
 
-
+        public void VypisObcanov()
+        {
+            Console.WriteLine("Obcania mesta " + nazov + ":");
+            foreach (var obcan in Obcania) 
+            {
+                obcan.VypisInfo();
+            }
+        }
     }
 }

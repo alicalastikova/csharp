@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace Mesto_a_obcan
 {
-    internal class Obcan
+    public class Obcan
     {
-      
+        public string meno { get; set; }
+        public int vek { get; set; }
 
-
+        public Obcan(string meno, int Vek)
+        {
+            vek = Vek;
+            this.meno = meno;
+        }
+        
+        public void VypisInfo()
+        {
+            Console.WriteLine("meno:" + meno+" vek:" + vek);
+        }
     }
 }

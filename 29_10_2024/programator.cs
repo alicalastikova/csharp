@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace _29_10_2024
 {
-    public class programator
+    public class programator : Obcan
     {
-        public string meno { get; set; }
-        public int vek { get; set; }
-
-        public programator(string meno, int Vek)
+        public string programovacijazyk;
+        public programator(string meno, int Vek, string programovacijazyk) : base(meno, Vek) 
         {
-            vek = Vek;
-            this.meno = meno;
+           this.programovacijazyk = programovacijazyk;
         }
-        public void vypisinfo()
+       
+        public new void vypisinfo()
         {
-            Console.WriteLine("Programator meno:" + meno + "Programator vek:" + vek);
+            Console.WriteLine( meno + "," + vek + "rokov, pise kod v jazyku:" + programovacijazyk);
         }
     }
 }

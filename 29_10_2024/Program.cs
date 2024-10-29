@@ -1,6 +1,6 @@
 ﻿namespace _29_10_2024
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {

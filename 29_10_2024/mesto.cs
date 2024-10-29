@@ -9,45 +9,27 @@ namespace _29_10_2024
     public class mesto
     {
         public string nazov;
-        public List<lekar> lekari = new List<lekar>();
-        public List<ucitel> ucitelia = new List<ucitel>();
-        public List<programator> programatori = new List<programator>();
-
+        public List<Obcan> obcania = new List<Obcan>();
+       
         public mesto(string nazov)
         {
             this.nazov = nazov;
+            obcania = new List<Obcan>();    
         }
 
         public void PridajLekara(lekar lekar)
         {
-            lekari.Add(lekar);
-        }
-
-        public void PridajProgramatora(programator programator)
-        {
-            programatori.Add(programator);
-        }
-
-        public void PridajUcitela(ucitel ucitel)
-        {
-            ucitelia.Add(ucitel);
+            obcania.Add(lekar);
         }
         
         public void VypisObcana()
         {
             Console.WriteLine("Obcania mesta " + nazov + ":");
-            foreach (lekar lekar in lekari)
+            foreach (Obcan obcan in obcania)
             {
-                lekar.vypisinfo();
+                obcan.vypisinfo();
             }
-            foreach (programator programator in programatori)
-            {
-                programator.vypisinfo();
-            }
-            foreach (ucitel ucitel in ucitelia)
-            {
-                ucitel.vypisinfo();
-            }
+           
         }
     }
 }   

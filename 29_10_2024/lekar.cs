@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace _29_10_2024
 {
-    public class lekar
+    public class lekar : Obcan
     {
-        public string meno { get; set; }
-        public int vek { get; set; }
-
-        public lekar(string meno, int Vek)
+        
+        public lekar(string meno, int vek) : base(meno, vek) { }
+        
+        public new void vypisinfo()
         {
-            vek = Vek;
-            this.meno = meno;
-        }
-        public void vypisinfo()
-        {
-            Console.WriteLine("Lekar meno:" + meno + "Lekar vek:" + vek);
+            Console.WriteLine(meno + "," + vek+ "rokov, lieci ludi.");
         }
     }
 

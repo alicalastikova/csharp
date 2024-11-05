@@ -6,11 +6,19 @@
         {
             mesto bratislava = new mesto("bratislava");
 
-            bratislava.PridajProgramatora(new programator(" Igor ", 34));
-            bratislava.PridajLekara(new lekar(" Anna ", 28));
-            bratislava.PridajUcitela(new ucitel(" peter ", 20));
-
+            for (int i = 0; i < 31; i++)
+            {
+                Obcan o = GeneratorObcanov.GenerujObcana();
+                bratislava.PridajObcana(o);
+            }
+            for (int i = 0; i < 31; i++)
+            {
+                programator programator = GeneratorObcanov.GenerujProgramatora();
+                bratislava.PridajObcana(programator);
+            }
             bratislava.VypisObcana();
+
         }
     }
+
 }

@@ -17,9 +17,9 @@ namespace _29_10_2024
             obcania = new List<Obcan>();    
         }
 
-        public void PridajLekara(lekar lekar)
+        public void PridajObcana(Obcan obcan)
         {
-            obcania.Add(lekar);
+            obcania.Add(obcan);
         }
         
         public void VypisObcana()

@@ -10,6 +10,7 @@ namespace _29_10_2024
     {
         public string meno;
         public int vek;
+       
 
         public Obcan(string meno, int vek)
         {
@@ -17,13 +18,10 @@ namespace _29_10_2024
             this.vek = vek;
         }
 
-        public void vypisinfo()
+        public virtual void vypisinfo()
         {
-            Console.WriteLine("meno" + meno);
+            Console.WriteLine("meno: " + meno ,"vek: "+ vek);
         }
-        public void vypisvek()
-        {
-            Console.WriteLine("Vek" + vek);
-        }
+       
     }
 }

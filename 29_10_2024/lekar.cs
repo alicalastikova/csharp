@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _29_10_2024
+/*namespace _29_10_2024
 {
     public class lekar : Obcan
     {
@@ -13,8 +13,8 @@ namespace _29_10_2024
         
         public new void vypisinfo()
         {
-            Console.WriteLine(meno + "," + vek+ "rokov, lieci ludi.");
+         Console.WriteLine(meno + "," + vek+ "rokov, lieci ludi.");
         }
     }
 
-}
+}*/

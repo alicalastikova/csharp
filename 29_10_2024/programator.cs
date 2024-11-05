@@ -14,7 +14,7 @@ namespace _29_10_2024
            this.programovacijazyk = programovacijazyk;
         }
        
-        public new void vypisinfo()
+        public override void vypisinfo()
         {
             Console.WriteLine( meno + "," + vek + "rokov, pise kod v jazyku:" + programovacijazyk);
         }

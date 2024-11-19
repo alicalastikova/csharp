@@ -8,9 +8,20 @@ namespace _29_10_2024
 {
     public class Obcan
     {
-        public string meno;
-        public int vek;
+        protected string meno;
+        protected int vek;
        
+        public string Meno
+        {
+            get { return meno; }
+            set { meno = value; }
+        }
+        public int Vek
+        {
+
+            get { return vek; }
+            set { vek = value; }
+        }
 
         public Obcan(string meno, int vek)
         {

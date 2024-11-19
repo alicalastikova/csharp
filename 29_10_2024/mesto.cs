@@ -8,7 +8,7 @@ namespace _29_10_2024
 {
     public class mesto
     {
-        public string nazov;
+        protected string nazov;
         public List<Obcan> obcania = new List<Obcan>();
        
         public mesto(string nazov)

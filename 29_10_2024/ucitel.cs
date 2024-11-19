@@ -9,8 +9,8 @@ namespace _29_10_2024
 {
     public class ucitel
     {
-        public string meno { get; set; }
-        public int vek { get; set; }
+        protected string meno { get; set; }
+        protected int vek { get; set; }
 
         public ucitel(string meno, int Vek)
         {

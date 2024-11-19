@@ -8,7 +8,7 @@ namespace _29_10_2024
 {
     public class programator : Obcan
     {
-        public string programovacijazyk;
+        protected string programovacijazyk;
         public programator(string meno, int Vek, string programovacijazyk) : base(meno, Vek) 
         {
            this.programovacijazyk = programovacijazyk;

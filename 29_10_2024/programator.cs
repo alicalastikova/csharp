@@ -13,6 +13,8 @@ namespace _29_10_2024
         {
            this.programovacijazyk = programovacijazyk;
         }
+        public programator()
+        { }
        
         public override void vypisinfo()
         {

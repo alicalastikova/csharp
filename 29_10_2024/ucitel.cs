@@ -17,6 +17,9 @@ namespace _29_10_2024
             vek = Vek;
             this.meno = meno;
         }
+        public ucitel()
+        { }
+
         public void vypisinfo()
         {
             Console.WriteLine("Ucitel meno:" + meno + "Ucitel vek:" + vek);

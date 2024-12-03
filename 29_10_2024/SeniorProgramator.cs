@@ -13,6 +13,8 @@ namespace _29_10_2024
         {
             this.pocetProjektov = pocetProjektov;
         }
+        public SeniorProgramator()
+        { }
         public new void vypisinfo()
         {
             Console.WriteLine(meno+ "," + vek+ "programuje v: " + pocetProjektov+ " a ma "+pocetProjektov+" projektov");

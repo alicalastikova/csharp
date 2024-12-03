@@ -29,10 +29,16 @@ namespace _29_10_2024
             this.vek = vek;
         }
 
+        public Obcan()
+        {
+
+        }
+
         public virtual void vypisinfo()
         {
             Console.WriteLine("meno: " + meno ,"vek: "+ vek);
         }
+
        
     }
 }
